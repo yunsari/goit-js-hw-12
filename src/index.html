@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script type="module">
+    import './main.js';
+  </script>
+
+  <title>Vanilla App Template</title>
+  <!-- Styles CSS-->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <!-- iziToast CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
+  <!-- Loader CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vineethtrv/css-loader/css-loader.css">
+  <!-- SimpleLightbox CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.css" rel="stylesheet">
+
+  <title>Ödev 11</title>
+</head>
+
+<body>
+  <header class="topbar">
+    <form id="search-form" class="search-wrap" role="search">
+      <input id="query" class="search-input" name="search" placeholder="Search images..." aria-label="Search images" />
+      <button type="submit" class="search-btn">Search</button>
+    </form>
+  </header>
+
+  <div id="results" class="gallery"></div>
+
+  <div id="loader" class="loader loader--style1">
+    <div class="loader-inner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Main JS -->
+  <script src="./main.js"></script>
+  <!-- iziToast JS -->
+  <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+  <!-- SimpleLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.js"></script>
+
+</body>
+
+</html>

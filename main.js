@@ -8,7 +8,7 @@ const loadMoreBtn = document.getElementById('load-more');
 let lightbox;
 let currentPage = 1;
 let currentQuery = '';
-const perPage = 40;
+const perPage = 20;
 
 async function fetchImages(query, page = 1) {
   loader.style.display = 'block';
@@ -96,7 +96,7 @@ function renderGallery(items, append = false) {
 
   results.appendChild(fragment);
 
-  if (lightbox) lightbox.destroy();
+  if (lightbox) lightbox.refresh();
   lightbox = new SimpleLightbox('.gallery a', {
     captions: true,
     captionsData: 'alt',
